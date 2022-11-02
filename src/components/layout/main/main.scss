@@ -1,0 +1,88 @@
+.card-body{
+    display: flex;
+}
+.col-1{
+    width: 20%;
+}
+.col-6{
+    width: 60%;
+}
+.col-5{
+    width: 40%;
+}
+.col-3{
+    width: 10%;
+}
+.ty-p2{
+    margin-top: 20px;
+}
+.text-header{
+    color: transparent;
+    margin-top: 141px;
+}
+.companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.companies p{
+    text-transform: capitalize;
+
+    color: #667085;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;    
+}
+.card-companies{
+    margin-top: 16px;
+    width: 100%;
+    color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-mar{
+    margin-left: 141px;
+}
+
+.box-icon{
+    margin-left: 247px;
+    display: flex;
+    width: 1060px;
+    height: 86px;
+    background: #F6F6F6;
+    border-radius: 8px;
+    line-height: 126px;
+}
+.card-icon-box{
+    padding-left: 16px;
+}
+
+.img > Img{
+    width: 50px;
+    height: 50px;
+}
+.companies-top{
+    margin-top: -50px;
+}
+.car-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-2-box{
+    margin-left: 205px;
+    width: 1065px;
+    height: 450.43px;
+    background: #F6F6F6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mr1{
+    margin-top: 50px;
+}
+.button{
+    font-size: 16px;
+}

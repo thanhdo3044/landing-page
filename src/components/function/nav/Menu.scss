@@ -1,0 +1,22 @@
+.nav-ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-ul ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.nav-ul ul li{
+    display: inline-table; 
+}
+
+.nav-ul ul li a{
+    text-decoration: none;
+    color:#272D38;
+    line-height: 28px;
+    padding: 28px;
+}

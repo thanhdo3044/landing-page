@@ -1,0 +1,18 @@
+.card{
+    width: 345px;
+    height: 334px;
+    background: #F6F6F6;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-header,.card-main,.car-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-5{
+    margin-bottom: 46px;
+    color: transparent;
+}
