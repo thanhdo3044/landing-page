@@ -10,13 +10,23 @@ import img3 from '../../../image/slack.png'
 import img4 from '../../../image/dropbox.png'
 import img5 from '../../../image/zoom.png'
 import img6 from '../../../image/right-arrow.png'
-import icon1 from '../../../image/icon1.png'
 import './main.scss';
 import Card from '../../function/card/Card';
+import { getUser } from '../../../mockr/User';
+import { useEffect, useState } from 'react';
 
 
+    
 
 function Main(){
+    const [dataUser,setDataUser] = useState([])
+     useEffect(()=>{
+        const getData = async () =>{
+            const users = await getUser()
+            setDataUser(users);
+        }
+        getData()
+    },[])
     return (
         <>
             <div className="text-header">1</div>
@@ -123,21 +133,18 @@ function Main(){
             </div>
 
             <div className="car-center">
-                <Card
-                    img={icon1}
-                    title={"Andrew Rathore"}
-                    content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "}
-                     />
-                     <Card
-                    img={icon1}
-                    title={"Andrew Rathore"}
-                    content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "}
-                     />
-                     <Card
-                    img={icon1}
-                    title={"Andrew Rathore"}
-                    content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "}
-                     />
+                {
+                    dataUser.map(data=>{
+                        return(
+                            <Card 
+                                key={data.id}
+                                img = {data.img}
+                                title = {data.name}
+                                content = {data.title}
+                            />
+                        )
+                    })
+                }
             </div>
             <div className="text-header">1</div>
             
